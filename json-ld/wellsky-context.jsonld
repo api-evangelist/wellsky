@@ -1,0 +1,121 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "fhir": "http://hl7.org/fhir/",
+    "wellsky": "https://wellsky.com/vocab/",
+    "caretend": "https://caretendapi.readme.io/vocab/",
+
+    "aid": "@id",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "humanURL": "schema:url",
+    "baseURL": "schema:url",
+    "tags": "schema:keywords",
+
+    "Patient": "fhir:Patient",
+    "Observation": "fhir:Observation",
+    "MedicationRequest": "fhir:MedicationRequest",
+    "Condition": "fhir:Condition",
+    "CarePlan": "fhir:CarePlan",
+    "Encounter": "fhir:Encounter",
+    "DocumentReference": "fhir:DocumentReference",
+    "Practitioner": "fhir:Practitioner",
+    "Organization": "fhir:Organization",
+
+    "referral": "wellsky:referral",
+    "authorization": "wellsky:authorization",
+    "visitScheduling": "wellsky:visitScheduling",
+    "clinicalDocumentation": "wellsky:clinicalDocumentation",
+    "billing": "wellsky:billing",
+    "homeHealth": "wellsky:homeHealth",
+    "hospice": "wellsky:hospice",
+    "palliativeCare": "wellsky:palliativeCare",
+    "personalCare": "wellsky:personalCare",
+    "specialtyPharmacy": "wellsky:specialtyPharmacy",
+    "homeInfusion": "wellsky:homeInfusion",
+
+    "patientManagement": "caretend:patientManagement",
+    "inventory": "caretend:inventory",
+    "purchaseOrder": "caretend:purchaseOrder",
+    "clinicianVisit": "caretend:clinicianVisit",
+    "customAssessment": "caretend:customAssessment",
+    "supplier": "caretend:supplier",
+    "dispensableUnit": "caretend:dispensableUnit",
+
+    "Authentication": "schema:requiresAuthentication",
+    "Documentation": "schema:TechArticle",
+    "TermsOfService": "schema:termsOfService",
+    "Support": "schema:ContactPoint",
+    "Blog": "schema:Blog",
+
+    "FHIRR4": {
+      "@id": "fhir:version",
+      "@type": "@id"
+    },
+    "OAuth2": {
+      "@id": "schema:accessMode",
+      "@type": "@id"
+    },
+    "USCoreIG": {
+      "@id": "fhir:ImplementationGuide",
+      "@type": "@id"
+    },
+    "USCDI": {
+      "@id": "wellsky:USCDI",
+      "@type": "@id"
+    },
+    "CEHRT": {
+      "@id": "wellsky:CEHRT",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "wellsky:",
+      "@type": "schema:Organization",
+      "schema:name": "WellSky",
+      "schema:url": "https://wellsky.com",
+      "schema:description": "WellSky provides care coordination and home health software with REST APIs for managing patient referrals, authorizations, visit scheduling, clinical documentation, and billing workflows across home health, hospice, palliative care, personal care, and specialty pharmacy settings.",
+      "schema:sameAs": [
+        "https://caretendapi.readme.io/",
+        "https://wellsky.dynamicfhir.com/",
+        "https://mediwareinc.github.io/consolo.interop-api-docs/",
+        "https://apidocs.clearcareonline.com/"
+      ]
+    },
+    {
+      "@id": "wellsky:caretend-api",
+      "@type": "schema:WebAPI",
+      "schema:name": "WellSky CareTend API",
+      "schema:url": "https://caretendapi.readme.io/",
+      "schema:description": "Integration hub API for WellSky's CareTend home infusion and specialty pharmacy platform.",
+      "schema:keywords": ["Home Infusion", "Specialty Pharmacy", "Patient Management", "Billing", "Inventory"]
+    },
+    {
+      "@id": "wellsky:fhir-api",
+      "@type": "schema:WebAPI",
+      "schema:name": "WellSky FHIR API",
+      "schema:url": "https://wellsky.dynamicfhir.com/wellsky/basepractice/r4/Home/ApiDocumentation",
+      "schema:description": "FHIR R4-compliant API built on the US Core Implementation Guide for ConnectEHR interoperability.",
+      "schema:keywords": ["FHIR", "EHR", "Interoperability", "USCDI", "Clinical Data"]
+    },
+    {
+      "@id": "wellsky:hospice-palliative-api",
+      "@type": "schema:WebAPI",
+      "schema:name": "WellSky Hospice and Palliative API",
+      "schema:url": "https://mediwareinc.github.io/consolo.interop-api-docs/",
+      "schema:description": "FHIR R4 interoperability API for EHR partners integrating with WellSky's Consolo hospice and palliative care platform.",
+      "schema:keywords": ["Hospice", "Palliative Care", "FHIR", "EHR Integration", "CEHRT"]
+    },
+    {
+      "@id": "wellsky:personal-care-connect-api",
+      "@type": "schema:WebAPI",
+      "schema:name": "WellSky Personal Care Connect API",
+      "schema:url": "https://apidocs.clearcareonline.com/",
+      "schema:description": "FHIR-compliant API for WellSky Personal Care software platform enabling data integration and interoperability for home care agencies.",
+      "schema:keywords": ["Personal Care", "Home Care", "Scheduling", "FHIR"]
+    }
+  ]
+}
