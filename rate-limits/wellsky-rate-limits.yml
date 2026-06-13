@@ -1,0 +1,38 @@
+name: WellSky Rate Limits
+description: WellSky does not publicly document specific API rate limits for its CareTend, FHIR, or other API products. Rate limits are determined per account and communicated during onboarding. Bearer tokens for CareTend API expire after 30 minutes and must be refreshed.
+url: https://caretendapi.readme.io/docs/getting-started
+created: '2026-06-13'
+modified: '2026-06-13'
+
+limits:
+  - api: CareTend Integration Hub API
+    type: TokenExpiry
+    value: 30
+    unit: minutes
+    description: Bearer tokens generated via the OAuth 2.0 client_credentials grant expire after 30 minutes. A new token must be requested from https://auth.wellsky.io/connect/token before the expiry.
+    url: https://caretendapi.readme.io/docs/getting-started
+
+  - api: WellSky FHIR API
+    type: RateLimit
+    value: not-disclosed
+    description: Rate limits for the FHIR R4 API (ConnectEHR) are not publicly documented. Limits are enforced per registered client application. Contact WellSky for specifics.
+    url: https://wellsky.dynamicfhir.com/wellsky/basepractice/r4/Home/ApiDocumentation
+
+  - api: Hospice and Palliative FHIR API
+    type: RateLimit
+    value: not-disclosed
+    description: Rate limits for the Consolo Hospice and Palliative FHIR API are not publicly disclosed. Access is gated by API license agreement approval.
+    url: https://mediwareinc.github.io/consolo.interop-api-docs/
+
+  - api: Personal Care Connect API
+    type: RateLimit
+    value: not-disclosed
+    description: Rate limits for the WellSky Personal Care Connect API are not publicly documented. Contact WellSky for account-level limits.
+    url: https://apidocs.clearcareonline.com/
+
+notes: >
+  WellSky does not publish rate limit policies in its public-facing developer
+  documentation. Organizations integrating with WellSky APIs should contact
+  WellSky support or their account representative to understand applicable
+  throttling policies. The only publicly confirmed limit is the 30-minute
+  bearer token expiry for the CareTend Integration Hub API.

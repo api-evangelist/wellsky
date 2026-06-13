@@ -1,0 +1,47 @@
+name: WellSky FinOps
+description: Financial operations considerations for organizations integrating with WellSky APIs. WellSky uses a custom, sales-led pricing model with no public self-serve tiers. All API access is bundled with software subscriptions and priced based on organization size, product line, and integration scope.
+url: https://wellsky.com/
+created: '2026-06-13'
+modified: '2026-06-13'
+
+model: custom-enterprise
+billingCycle: annual
+selfServe: false
+trialAvailable: false
+publicPricing: false
+
+costFactors:
+  - factor: Software License
+    description: WellSky API access is bundled with the underlying software license (CareTend, ConnectEHR, Consolo, Personal Care). The license cost is the primary cost driver and typically charged annually.
+    estimatedRange: $30,000 - $150,000 per year for mid-sized agencies
+
+  - factor: Agency / Organization Size
+    description: Pricing scales with organization size, number of users, patient volume, and geographic footprint. Larger health systems pay proportionally more.
+
+  - factor: Integration Scope
+    description: Organizations requiring deeper integrations or additional API capabilities may incur implementation and professional services fees charged by WellSky or certified integration partners.
+
+  - factor: Professional Services
+    description: Custom integrations, data migrations, and onboarding support are typically billed separately as professional services engagements.
+
+  - factor: Support Tier
+    description: WellSky offers tiered support levels. Enhanced support packages with faster SLAs may carry additional costs.
+
+costOptimization:
+  - strategy: Token Reuse
+    description: For CareTend API, reuse bearer tokens within their 30-minute validity window to minimize token generation overhead and reduce potential throttling.
+
+  - strategy: Batch Operations
+    description: Where the API supports batch or bulk operations, use them to reduce per-call overhead and improve throughput efficiency.
+
+  - strategy: Negotiate API Access in Software Contract
+    description: When negotiating the WellSky software license, explicitly include API access rights, rate limits, and integration scope in the contract to avoid unexpected add-on fees.
+
+  - strategy: Evaluate Integration Tier
+    description: Assess whether the standard integration hub (CareTend API) or the FHIR interoperability layer best suits the use case to avoid over-engineering the integration.
+
+contacts:
+  - FN: WellSky Sales
+    url: https://wellsky.com/contact/
+  - FN: WellSky Support
+    url: https://wellsky.com/support/

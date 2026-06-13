@@ -1,0 +1,40 @@
+name: WellSky Plans and Pricing
+description: WellSky uses a sales-led, custom pricing model for all its software products and API access. There are no publicly listed self-serve tiers or standard subscription prices. Organizations must contact WellSky sales for a quote tailored to their size and use case.
+url: https://wellsky.com/
+created: '2026-06-13'
+modified: '2026-06-13'
+
+plans:
+  - name: CareTend API Access
+    description: API access to the CareTend integration hub for home infusion and specialty pharmacy workflows. Pricing is custom and requires a WellSky CareTend software subscription. Client ID and Secret Key are provisioned per account.
+    url: https://caretendapi.readme.io/docs/getting-started
+    pricing: custom
+    contact:
+      - url: https://wellsky.com/home-infusion-software/
+
+  - name: WellSky FHIR API Access
+    description: FHIR R4 API access for ConnectEHR interoperability requires vendor registration through the ConnectEHR administrative UI. Access is available to organizations with an active WellSky ConnectEHR agreement.
+    url: https://wellsky.dynamicfhir.com/wellsky/basepractice/r4/Home/ApiDocumentation
+    pricing: custom
+    contact:
+      - url: https://wellsky.com/support/
+
+  - name: Hospice and Palliative API Access
+    description: EHR partner API access for WellSky Consolo requires completing a registration form and receiving approval from the WellSky Consolo team. Pricing tied to hospice software license.
+    url: https://mediwareinc.github.io/consolo.interop-api-docs/
+    pricing: custom
+    contact:
+      - email: consolo.support@wellsky.com
+
+  - name: Personal Care Connect API Access
+    description: API access for WellSky Personal Care is available to organizations that agree to the ClearCare Connect API Terms and Conditions. Pricing is custom based on agency size.
+    url: https://wellsky.com/clearcare-connect-api-terms/
+    pricing: custom
+    contact:
+      - url: https://wellsky.com/support/
+
+notes: >
+  WellSky does not publicly disclose API-specific pricing. All access is gated
+  behind existing software subscriptions and requires engagement with WellSky
+  sales or support. Estimated annual license costs for mid-sized agencies range
+  from $30,000 to $150,000 depending on product line and organization size.
