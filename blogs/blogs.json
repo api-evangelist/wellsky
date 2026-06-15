@@ -2,5 +2,17 @@
   "aid": "wellsky",
   "url": "https://wellsky.com/blog/",
   "retrieved": "2026-06-13",
-  "posts": []
+  "posts": [],
+  "repo": "wellsky",
+  "feeds": [
+    {
+      "source": "https://wellsky.com/support/",
+      "feed_url": "https://wellsky.com/feed/",
+      "title": "",
+      "saved": 1,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 1,
+  "fetched": "2026-06-14T20:42:17Z"
 }
