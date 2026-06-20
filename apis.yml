@@ -1,7 +1,7 @@
 aid: wellsky
 name: WellSky
 description: WellSky provides care coordination and home health software with REST APIs for managing patient referrals, authorizations, visit scheduling, clinical documentation, and billing workflows across home health, hospice, palliative care, personal care, and specialty pharmacy settings.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/wellsky/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -20,7 +20,7 @@ apis:
   - aid: wellsky:caretend-api
     name: WellSky CareTend API
     description: Integration hub API for WellSky's CareTend home infusion and specialty pharmacy platform, providing programmatic access to patient management, billing authorizations, clinical visits, inventory, purchase orders, and document workflows.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://caretendapi.readme.io/
     baseURL: https://api.wellsky.com
     tags:
@@ -41,7 +41,7 @@ apis:
   - aid: wellsky:fhir-api
     name: WellSky FHIR API
     description: FHIR R4-compliant API built on the US Core Implementation Guide, providing read access to patient health data including demographics, conditions, medications, lab results, care plans, and clinical documents for ConnectEHR interoperability.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://wellsky.dynamicfhir.com/wellsky/basepractice/r4/Home/ApiDocumentation
     baseURL: https://wellsky.dynamicfhir.com/fhir/wellsky/basepractice/r4
     tags:
@@ -60,7 +60,7 @@ apis:
   - aid: wellsky:hospice-palliative-api
     name: WellSky Hospice and Palliative API
     description: FHIR R4 interoperability API for EHR partners integrating with WellSky's Consolo hospice and palliative care platform, supporting patient demographics, care plans, medication requests, observations, encounters, and CEHRT data-blocking compliance requirements.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://mediwareinc.github.io/consolo.interop-api-docs/
     baseURL: https://mediwareinc.github.io/consolo.interop-api-docs/
     tags:
@@ -79,7 +79,7 @@ apis:
   - aid: wellsky:personal-care-connect-api
     name: WellSky Personal Care Connect API
     description: FHIR-compliant API for WellSky Personal Care software platform enabling data integration and interoperability for home care agencies, built on OAuth 2.0 client credentials flow for scheduling, care worker management, and visit data.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://apidocs.clearcareonline.com/
     baseURL: https://apidocs.clearcareonline.com/
     tags:
