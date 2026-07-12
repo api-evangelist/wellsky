@@ -97,6 +97,8 @@ apis:
         url: https://wellsky.com/support/
 
 common:
+  - type: DomainSecurity
+    url: security/wellsky-domain-security.yml
   - type: Blog
     url: https://wellsky.com/blog/
   - type: Support
