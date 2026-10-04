@@ -39,6 +39,7 @@ tags:
   - Clinical Documentation
   - Billing
   - EHR
+  - Home Care
 apis:
   - aid: wellsky:caretend-api
     name: WellSky CareTend API
