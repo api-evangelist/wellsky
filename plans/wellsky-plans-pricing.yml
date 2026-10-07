@@ -1,3 +1,8 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (dated 2026-06-13 by the file itself), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
+generated: '2026-06-13'
 name: WellSky Plans and Pricing
 description: WellSky uses a sales-led, custom pricing model for all its software products and API access. There are no publicly listed self-serve tiers or standard subscription prices. Organizations must contact WellSky sales for a quote tailored to their size and use case.
 url: https://wellsky.com/
