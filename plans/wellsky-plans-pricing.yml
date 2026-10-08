@@ -43,3 +43,34 @@ notes: >
   behind existing software subscriptions and requires engagement with WellSky
   sales or support. Estimated annual license costs for mid-sized agencies range
   from $30,000 to $150,000 depending on product line and organization size.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  units: []
+  plans:
+  - name: CareTend API Access
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: WellSky FHIR API Access
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Hospice and Palliative API Access
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Personal Care Connect API Access
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
