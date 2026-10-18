@@ -38,6 +38,16 @@ tags:
   - FHIR
   - Clinical Documentation
   - Billing
+  - Electronic Health Records
+  - Home Care
+tags_raw:
+  - Healthcare
+  - Home Health
+  - Hospice
+  - Care Coordination
+  - FHIR
+  - Clinical Documentation
+  - Billing
   - EHR
   - Home Care
 apis:
@@ -69,6 +79,12 @@ apis:
     humanURL: https://wellsky.dynamicfhir.com/wellsky/basepractice/r4/Home/ApiDocumentation
     baseURL: https://wellsky.dynamicfhir.com/fhir/wellsky/basepractice/r4
     tags:
+      - FHIR
+      - Electronic Health Records
+      - Interoperability
+      - USCDI
+      - Clinical Data
+    tags_raw:
       - FHIR
       - EHR
       - Interoperability
