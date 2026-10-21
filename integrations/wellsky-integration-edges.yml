@@ -56,6 +56,35 @@ edges:
       P856 not contradicting (Kin 2026-10-20 decision 2)
   detected_by: sweep-e-prescribing.py
   first_seen: '2026-10-20'
+- partner_name: FDA establishment registration and device listing (IVD / surgical specialties)
+  partner: null
+  partner_match: register-name
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm
+  category: FDA-registered device establishment
+  contract_reference:
+    register: openFDA device/registrationlisting (owner/operator, device listings by medical specialty)
+    standard: FDA establishment registration and device listing (21 CFR 807)
+    spec_file: null
+    role: fda-registered-owner-operator
+    registered_name: WellSky Corporation
+    matched_domain: null
+    matched_by: register-name
+    detected_by: sweep-ivd-diagnostics.py
+    detected: '2026-10-21'
+    listed_specialties:
+    - Hematology
+    signal_note: 'REGULATED through the establishment registration: a registration is not a clearance, so no certified_products;
+      specialties are context, never counted'
+    register_name_note: register-name 'wellsky' = wellsky; no wikidata P856
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  detected_by: sweep-ivd-diagnostics.py
+  first_seen: '2026-10-21'
 generated: '2026-10-12'
 method: searched
 checked:
@@ -63,6 +92,12 @@ checked:
 - https://accreditation.directtrust.org/accredited-organizations
 - https://www.drummondgroup.com/certified-products/epcs/
 - https://www.ncpdp.org/Members
+- https://api.fda.gov/device/510k.json
+- https://api.fda.gov/device/pma.json
+- https://api.fda.gov/device/registrationlisting.json
+- https://ec.europa.eu/tools/eudamed/api/
+- https://www.accessdata.fda.gov/premarket/ftparea/clia_detail.zip
+- https://www.advamed.org/advameddx/members/
 source:
 - https://accreditation.directtrust.org/accredited-organizations
 - https://www.ncpdp.org/Members
