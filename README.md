@@ -1,4 +1,4 @@
-# WellSky (wellsky)
+# WellSky
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,116 +66,110 @@
 
 WellSky provides care coordination and home health software with REST APIs for managing patient referrals, authorizations, visit scheduling, clinical documentation, and billing workflows across home health, hospice, palliative care, personal care, and specialty pharmacy settings.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/wellsky/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/wellsky/refs/heads/main/apis.yml)
+**Areas:** Healthcare · Home Health · Hospice · Care Coordination · FHIR · Clinical Documentation · Billing · Electronic Health Records · Home Care
 
-## Scope
+## WellSky on APIs.io
 
-- **Type:** Index
+Everything profiled for WellSky is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/wellsky/](https://apis.io/providers/wellsky/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (4)
 
-- Healthcare
-- Home Health
-- Hospice
-- Care Coordination
-- FHIR
-- Clinical Documentation
-- Billing
-- EHR
+- [WellSky CareTend API](https://apis.io/apis/wellsky/caretend-api/) — Integration hub API for WellSky's CareTend home infusion and specialty pharmacy platform, providing programmatic access to patient management, billing…
+- [WellSky FHIR API](https://apis.io/apis/wellsky/fhir-api/) — FHIR R4-compliant API built on the US Core Implementation Guide, providing read access to patient health data including demographics, conditions,…
+- [WellSky Hospice and Palliative API](https://apis.io/apis/wellsky/hospice-palliative-api/) — FHIR R4 interoperability API for EHR partners integrating with WellSky's Consolo hospice and palliative care platform, supporting patient demographics, care…
+- [WellSky Personal Care Connect API](https://apis.io/apis/wellsky/personal-care-connect-api/) — FHIR-compliant API for WellSky Personal Care software platform enabling data integration and interoperability for home care agencies, built on OAuth 2.0…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-06-13
-- **Modified:** 2026-06-13
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### JSON-LD (1)
 
-### WellSky CareTend API
+Linked-data contexts for the provider's vocabulary.
 
-Integration hub API for WellSky's CareTend home infusion and specialty pharmacy platform, providing programmatic access to patient management, billing authorizations, clinical visits, inventory, purchase orders, and document workflows.
+- [Wellsky Context](https://apis.io/jsonld/wellsky/wellsky-context/)
 
-- **Human URL:** [https://caretendapi.readme.io/](https://caretendapi.readme.io/)
-- **Base URL:** `https://api.wellsky.com`
+#### Security (1)
 
-#### Tags
+Authentication, trust centre, and vulnerability disclosure.
 
-- Home Infusion
-- Specialty Pharmacy
-- Patient Management
-- Billing
-- Inventory
+- [Wellsky Domain Security](https://apis.io/security/wellsky/wellsky-domain-security/)
 
-#### Properties
+#### Plans and pricing (1)
 
-- [Documentation](https://caretendapi.readme.io/)
-- [Authentication](https://caretendapi.readme.io/docs/getting-started)
+Published plans, tiers and prices.
 
-### WellSky FHIR API
+- [Wellsky Plans Pricing](https://apis.io/plans/wellsky/wellsky-plans-pricing/)
 
-FHIR R4-compliant API built on the US Core Implementation Guide, providing read access to patient health data including demographics, conditions, medications, lab results, care plans, and clinical documents for ConnectEHR interoperability.
+#### Rate limits (1)
 
-- **Human URL:** [https://wellsky.dynamicfhir.com/wellsky/basepractice/r4/Home/ApiDocumentation](https://wellsky.dynamicfhir.com/wellsky/basepractice/r4/Home/ApiDocumentation)
-- **Base URL:** `https://wellsky.dynamicfhir.com/fhir/wellsky/basepractice/r4`
+Published request limits.
 
-#### Tags
+- [Wellsky Rate Limits](https://apis.io/rate-limits/wellsky/wellsky-rate-limits/)
 
-- FHIR
-- EHR
-- Interoperability
-- USCDI
-- Clinical Data
+#### FinOps (1)
 
-#### Properties
+What the API costs to run, by operation.
 
-- [Documentation](https://wellsky.dynamicfhir.com/wellsky/basepractice/r4/Home/ApiDocumentation)
+- [Wellsky Finops](https://apis.io/finops/wellsky/wellsky-finops/)
 
-### WellSky Hospice and Palliative API
+## Where to find this API
 
-FHIR R4 interoperability API for EHR partners integrating with WellSky's Consolo hospice and palliative care platform, supporting patient demographics, care plans, medication requests, observations, encounters, and CEHRT data-blocking compliance requirements.
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- **Human URL:** [https://mediwareinc.github.io/consolo.interop-api-docs/](https://mediwareinc.github.io/consolo.interop-api-docs/)
-- **Base URL:** `https://mediwareinc.github.io/consolo.interop-api-docs/`
-
-#### Tags
-
-- Hospice
-- Palliative Care
-- FHIR
-- EHR Integration
-- CEHRT
-
-#### Properties
-
-- [Documentation](https://mediwareinc.github.io/consolo.interop-api-docs/)
-
-### WellSky Personal Care Connect API
-
-FHIR-compliant API for WellSky Personal Care software platform enabling data integration and interoperability for home care agencies, built on OAuth 2.0 client credentials flow for scheduling, care worker management, and visit data.
-
-- **Human URL:** [https://apidocs.clearcareonline.com/](https://apidocs.clearcareonline.com/)
-- **Base URL:** `https://apidocs.clearcareonline.com/`
-
-#### Tags
-
-- Personal Care
-- Home Care
-- Scheduling
-- FHIR
-
-#### Properties
-
-- [Documentation](https://apidocs.clearcareonline.com/)
-- [Terms of Service](https://wellsky.com/clearcare-connect-api-terms/)
-
-## Common Properties
-
-- [Blog](https://wellsky.com/blog/)
+- [Website](https://www.wellsky.com/)
 - [Support](https://wellsky.com/support/)
-- [Plans](plans/wellsky-plans-pricing.yml)
-- [Rate Limits](rate-limits/wellsky-rate-limits.yml)
-- [Fin Ops](finops/wellsky-finops.yml)
+- [Blog](https://wellsky.com/blog/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 19.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 10.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 22.6 |
+| Access clarity | 18.4 |
+
+**Agent readiness 3.1** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.4** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/wellsky/](https://apis.io/providers/wellsky/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for WellSky: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/wellsky/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
